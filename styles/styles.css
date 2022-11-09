@@ -6,36 +6,6 @@
   list-style: none;
 }
 
-/*:root {
-    --color-primary: #191d2b;
-    --color-secondary: #27AE60;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
-    --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-}
-
-.light-mode {
-    --color-primary: #FFFFFF;
-    --color-secondary: #1D63FF;
-    --color-white: #454e56;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
-    --color-grey-6: #12181b;
-    --color-icon: #c5c7d0;
-}*/
 :root {
   --color-primary: #FFFFFF;
   --color-secondary: #1D63FF;
@@ -494,80 +464,11 @@ section {
   color: var(--color-grey-2);
 }
 
-/*.port-text {
-    padding: 2rem 0;
-    text-align: center;
+.container.contact {
+  background-size: cover;
 }
 
-.portfolios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    margin-top: 3rem;
-    .portfolio-item {
-        position: relative;
-        border-radius: 15px;
-        img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-        .hover-items {
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-secondary);
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            opacity: 0;
-            transform: scale(0);
-            transition: all .4s ease-in-out;
-            h3 {
-                font-size: 1.5rem;
-                color: var(--color-white);
-                margin-bottom: 1.5rem;
-            }
-            .icons {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .icon {
-                    background-color: var(--color-primary);
-                    border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 1rem;
-                    cursor: pointer;
-                    transition: all .4s ease-in-out;
-                    i {
-                        font-size: 1.5rem;
-                        color: var(--color-white);
-                        margin: 0 1rem;
-                    }
-                    &:hover {
-                        background-color: var(--color-white);
-                        i { color: var(--color-primary); }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.portfolio-item:hover .hover-items {
-    opacity: 1;
-    transform: scale(1);
-}*/
-.contact-content-con {
+.container.contact .contact-content-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,28 +476,33 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 3.5rem;
+  padding: 2rem 3rem 3rem 3rem;
 }
 
-.contact-content-con .left-contact {
+.container.contact .contact-content-con .left-contact {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-.contact-content-con .left-contact h4 {
+.container.contact .contact-content-con .left-contact h4 {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
-.contact-content-con .left-contact p {
+.container.contact .contact-content-con .left-contact p {
   margin: 1rem 0;
   line-height: 2rem;
+  font-size: 1.3rem;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item {
+.container.contact .contact-content-con .left-contact .contact-info {
+  margin: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.container.contact .contact-content-con .left-contact .contact-info .contact-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,19 +514,25 @@ section {
           justify-content: space-between;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item p {
-  margin: .3rem 0 !important;
+.container.contact .contact-content-con .left-contact .contact-info .contact-item p {
+  margin: .8rem 0 !important;
   padding: 0 !important;
+  font-size: 1.2rem;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item .icon {
+.container.contact .contact-content-con .left-contact .contact-info .contact-item span {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.container.contact .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px 1fr;
       grid-template-columns: 40px 1fr;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item .icon i {
+.container.contact .contact-content-con .left-contact .contact-info .contact-item .icon i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,14 +542,14 @@ section {
   font-size: 1.3rem;
 }
 
-.contact-content-con .left-contact .contact-icon {
+.container.contact .contact-content-con .left-contact .contact-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 2rem;
 }
 
-.contact-content-con .left-contact .contact-icon a {
+.container.contact .contact-content-con .left-contact .contact-icon a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,15 +570,15 @@ section {
   transition: all .4s ease-in-out;
 }
 
-.contact-content-con .left-contact .contact-icon a:hover {
+.container.contact .contact-content-con .left-contact .contact-icon a:hover {
   background-color: var(--color-secondary);
 }
 
-.contact-content-con .left-contact .contact-icon a:hover i {
+.container.contact .contact-content-con .left-contact .contact-icon a:hover i {
   color: var(--color-primary);
 }
 
-.contact-content-con .left-contact .contact-icon a i {
+.container.contact .contact-content-con .left-contact .contact-icon a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,15 +591,15 @@ section {
   font-size: 1.3rem;
 }
 
-.contact-content-con .right-contact {
+.container.contact .contact-content-con .right-contact {
   margin-left: 0;
 }
 
-.contact-content-con .right-contact .input-control {
+.container.contact .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
 
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.container.contact .contact-content-con .right-contact .input-control input, .container.contact .contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -701,17 +613,17 @@ section {
   resize: none;
 }
 
-.contact-content-con .right-contact .i-c-2 {
+.container.contact .contact-content-con .right-contact .i-c-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact-content-con .right-contact .i-c-2 :last-child {
+.container.contact .contact-content-con .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
 
-.contact-content-con .right-contact .submit-btn {
+.container.contact .contact-content-con .right-contact .submit-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,17 +816,6 @@ section {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .portfolios {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-    margin-top: 1rem;
-  }
-  .blogs {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
   .contact-content-con {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -992,7 +893,7 @@ section {
     margin-top: 1.5rem;
   }
   .contact-content-con .right-contact {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
   .main-title h2 .bg-text {
     font-size: 5.5rem;
